@@ -1,8 +1,8 @@
 /* Base */
-@import './base/reset.css';
-@import './base/base.css';
+@import 'base/reset.css';
+@import 'base/base.css';
 
 /* Blocks */
 
-@import './blocks/section.css';
-@import './blocks/button.css';
+@import 'blocks/section.css';
+@import 'blocks/button.css';
