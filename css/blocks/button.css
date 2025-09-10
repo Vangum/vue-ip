@@ -1,0 +1,33 @@
+.button {
+	display: inline-block;
+	padding: 10px 15px;
+
+	border-radius: 7px;
+	background: #eee;
+	
+	opacity: 0.9;
+
+	transition: opacity 0.2s ease-in;
+}
+
+.button.green {
+	color: #ffffff;
+	background: #48bb59;
+}
+
+.button.red {
+	color: #ffffff;
+	background: #b33b3b;
+}
+
+.button:hover,
+.button:active {
+	opacity: 1;
+}
+
+.button.ip-button {
+	width: 60px;
+}
+
+@media (max-width: 800px) {
+}

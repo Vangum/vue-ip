@@ -1,0 +1,30 @@
+/* Fonts */
+@font-face {
+	font-family: 'JetBrains';
+	src: url('../../fonts/jetbrains/JetBrainsMono-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+	--font-base: 'JetBrains', sans-serif;
+}
+
+body {
+	background-color: #fafaf5;
+	color: #1f2a32;
+
+	font-family: var(--font-base);
+}
+
+a {
+	color: #1f2a32;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+
+	max-width: 1200px;
+	width: 100%;
+}

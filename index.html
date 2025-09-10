@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>IP Random</title>
+		<link rel="stylesheet" href="/css/main.css" />
+	</head>
+	<body>
+		<div class="container" id="root">
+			<main>
+				<section class="section">
+					<header class="section-header">
+						<h2 class="section-title">Free IP: {{ freeIp }}</h2>
+						<div class="section-header-groups">
+							<button class="button green" @click="getFreeIp">Next</button>
+							<button class="button red" @click="addNonWorking">
+								It doesn't work
+							</button>
+						</div>
+					</header>
+				</section>
+
+				<section class="section">
+					<div class="section-ip-grid">
+						<button
+							class="button ip-button"
+							v-for="(value, idx) in displayedList"
+							:key="idx"
+							:style="getButtonStyle(value)"
+							@click="addIp(idx)"
+						>
+							{{ value }}
+						</button>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+		<script src="vue.global.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
